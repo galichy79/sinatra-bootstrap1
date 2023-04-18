@@ -1,6 +1,8 @@
 <h2>Записаться</h2>
+<p>На этой странице вы сможете записаться к нам в Barber Shop</p>
 
-<form action="/visit" method="POST">
+
+<form action="/visit" method="POST" role="form">
   <div class="mb-3">
     <label >Ваше имя</label>
     <input name="username" type="text" class="form-control" placeholder="Введите ваше имя">
@@ -15,7 +17,23 @@
     <label >Когда вас ждать?</label>
     <input name="datetime" type="text" class="form-control" placeholder="Введите дату и время">
     
+  </div> <br>
+
   </div>
+  <div class="mb-3">
+    <label >Ваш парикмахер</label>
+    <select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="Марина">Марина</option>
+  <option value="Светлана">Светлана</option>
+  <option value="Анна">Анна</option>
+</select>
+   
+  </div> 
+
+
+ 
   
-  <button type="submit" class="btn btn-primary">Записаться</button>
 </form>
+
+<button type="submit" class="btn btn-primary">Записаться</button>
